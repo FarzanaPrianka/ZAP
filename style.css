@@ -1,0 +1,1852 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } 
+
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+.wrapper {
+
+    max-width: 1080px; 
+    margin:0 auto;  
+}
+
+/* header styling starts-----------------------------------------------------------------------------*/
+
+
+header {
+
+    background: url(assets/main-image-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    
+}
+
+.wrapper.zero {
+    padding-top:70px;
+    height: 100%;  
+}
+
+/* styling the nav */
+
+header nav {
+
+    display:flex; 
+    margin-bottom:130px;
+    justify-content: space-between;
+}
+
+header ul {
+    
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+}
+
+header ul a {
+
+    text-decoration:none;
+    display:block;
+    padding:20px; 
+    color:white;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+ 
+}
+
+header ul li {
+
+    color:white;
+    position:relative;
+
+}
+
+/* styling the border in li's */
+
+header ul li:hover a:after {
+
+    content: "";
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 20px;
+    border-bottom: 2px solid #eeb013;
+    text-align: center;
+}
+
+
+/* styling the text in the middle */
+
+.text-wrapper {
+
+    
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    height:50%;
+
+}
+
+header p.line_one {
+
+    
+    color: white;
+    margin:10px 0 20px;
+
+}
+
+.woocommerce {
+
+    font-size:50px;
+    color: white;
+    font-weight: 900;
+    border:3px solid whitesmoke;
+    margin:10px 0 10px;
+    padding:5px
+    
+}
+
+/* styling the discover button */
+
+.discover {
+    
+    margin-top:70px;
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    
+}
+
+/* section one styling starts-------------------------------------------------------------------------------------- */
+
+/* setting margin to section one */
+.section-one {
+    margin:2% 0 4%;
+}
+
+/* styling the wrapper of section one and flex its content */
+.wrapper.one {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* setting background image to each column */
+
+div.image-one {
+    background: url(assets/image-1.jpeg);
+}
+
+div.image-two {
+    background: url(assets/image-2.jpeg);
+}
+
+div.image-three {
+    background: url(assets/image-3.jpeg);
+}
+
+/* styling each column */
+
+div.image-one,  div.image-two, div.image-three {
+    width:33%;
+    height:40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:31%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+div.image-two {
+
+    flex-direction: column;
+}
+
+/* styling the header of each column */
+
+.newTrends, .accesories {
+    font-size: 2.1rem;
+    color:whitesmoke;
+    text-transform: uppercase;
+    border:3px solid whitesmoke;
+    padding:15px 30px;
+    letter-spacing: 3px;
+}
+
+
+div.image-two h3 {
+    margin:0;
+    font-size: 1.7rem;
+    color:whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+div.image-two h3.line_2 {
+    font-size: 5rem;
+}
+
+/* section one styling ends-------------------------------------------------------------------------------- */
+
+/* section two styling starts-------------------------------------------------------------------------------*/
+
+/* New arrival button styling */
+
+/* setting margin to section one */
+.section-two {
+    margin:0 0 2%;  
+}
+
+.newArrival {
+    border:2px solid #e4e4e4; 
+    width:25%;
+    margin:0 auto;
+    text-align: center;
+    padding:15px 40px;
+    text-transform: uppercase;
+    color:black;
+    margin-bottom: 60px;
+}
+
+.newArrival a {
+
+    text-decoration: none;
+
+}
+
+p.newArrival a:hover {
+
+    color:#eeb013;
+
+}
+
+.newArrival a:visited {
+
+    color: black;
+}
+
+/* list styling */
+
+
+.sectionTwoList {
+
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-transform: uppercase;
+    display:flex;
+    font-size:1.2rem;
+    letter-spacing: 1px;
+    width:40%;
+    margin:0 auto;
+    justify-content: space-between;
+    font-weight: 100;
+
+}
+
+.sectionTwoList a {
+
+    text-decoration: none;
+}
+
+.sectionTwoList a:visited {
+
+    color:black;
+}
+
+/* styling the diamond icon in the list */
+
+i.diamond {
+
+    color:#eeb013;
+    text-align: center;
+    margin-top:10px;
+    opacity:0;
+}
+
+.sectionTwoList li:hover i.diamond {
+    
+    opacity:1;
+}
+
+i.diamond.women {
+
+    opacity:1;
+}
+
+.sectionTwoList p {
+
+    text-align: center;
+}
+
+/* section two styling ends-------------------------------------------------------------------------------- */
+
+/* section three styling starts---------------------------------------------------------------------------- */
+
+/* setting the margin of section three */
+
+.section-three {
+
+    margin-bottom: 8vh;
+}
+
+/* styling the wrapper of section three */
+
+.wrapper.three {
+
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    min-height: 90vh;
+    
+}
+
+/* styling the container of image, price, button  */
+
+.image-sec-three {
+
+
+    width:24%;
+  
+}
+
+/* selecting each image */
+
+.image-sec-three img {
+
+    display:block;
+    width:100%;
+    
+}
+
+
+/* styling the add to cart button  */
+
+p.addToCart a {
+
+    width:100%;
+    background: rgba(238, 176, 19, 0);
+    position:absolute;
+    bottom:0;
+    margin:0;
+    color: rgba(0,0,0,0);
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-align: center;
+    padding:15px 0 15px;
+    text-decoration: none;
+    
+}
+
+div.pic {
+
+    position:relative;
+}
+
+.pic:hover a {
+
+    color: rgba(0,0,0,1);
+    background: rgba(238, 176, 19, 1);
+
+
+}
+
+/* styling the product name */
+
+.productName {
+
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.productName:hover {
+
+    color: #eeb013;
+}
+
+/* styling the price....... */
+
+.price {
+
+    display: flex;
+}
+
+.newPrice {
+
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.oldPrice {
+
+    font-family: 'Crimson Text', serif;
+    text-decoration: line-through;
+    padding:0 7px;
+    font-size: 14px;
+    
+}
+
+/* disappear the old price of product (4,6 and 8)  */
+
+.image-sec-three:nth-child(4) .oldPrice, .image-sec-three:nth-child(6) .oldPrice, .image-sec-three:nth-child(8) .oldPrice {
+
+    opacity: 0;
+}
+
+/* styling the text (new, sale) in image four and six */
+
+.new , .sale{
+
+    position: absolute;
+    top:5px;
+    left: 5px;
+    border:1px solid black;
+    margin:0;
+    padding:5px;
+    /* font-family: 'Crimson Text', serif; */
+    font-size: 9px;
+    text-transform: uppercase;
+    
+
+}
+
+
+/* section three styling ends---------------------------------------------------------------------------- */
+
+/* section four styling starts-----------------------------------------------------------------------------*/
+
+.section-four {
+
+    background: url(assets/main-image-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+/* styling the wrapper */
+
+.wrapper.four {
+
+    height:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* styling the flex container */
+
+  .flexcontainer-four {
+
+
+    flex:0 1 auto;
+
+  }
+
+  /* styling the texts */
+
+  .wrapper.four h3 {
+
+    font-size:25px;
+    text-transform: uppercase;
+
+}
+
+
+.wrapper.four p {
+
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.wrapper.four p.price {
+
+    color:#eeb013;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* styling the button */
+
+.shoppingNow {
+
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:normal;
+    font-size:10px;
+    padding: 20px 40px;
+    background-color: #eeb013;
+    border:none;
+    letter-spacing: 3px;
+
+}
+
+.shoppingNow a {
+
+    text-decoration: none;
+}
+
+.shoppingNow a:visited {
+
+    color:black;
+}
+
+/* section four styling ends---------------------------------------------------------------------------------------------- */
+
+/* section five styling starts---------------------------------------------------------------------------------------------*/
+
+.section-five {
+
+    background: url(assets/main-image-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    
+}
+
+/* styling the swrapper */
+
+.wrapper.five {
+
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+/* styling the flexcontainer */
+
+.flexcontainer-five {
+
+
+    flex:0 1 auto;
+
+  }
+
+  /* styling the texts */
+
+.wrapper.five h3 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+    text-transform: uppercase;
+
+}
+
+.wrapper.five p {
+
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.wrapper.five p.price {
+
+    color:#eeb013;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    opacity: 0;
+}
+
+/* Note: Shopping now button styling is done and shared in section four */
+
+
+/* section five styling ends------------------------------------------------------------------------------*/
+
+/* section six styling starts------------------------------------------------------------------------------*/
+
+/* setting margin for section six */
+.section-six {
+     margin:60px 0;
+}
+
+/* styling the wrapper and flex its content */
+.wrapper.six {
+
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+/* setting margin to column two */
+.part-2 {
+
+    margin:0 25px 0;
+}
+
+/* styling the icons */
+.wrapper.six i {
+
+    border:1px solid black;
+    border-radius: 50%;
+    padding:20px;
+    margin-bottom:30px; 
+}
+
+/* styling the texts */
+
+.section-six p.line_1 {
+    color: black;
+    font-family: 'Crimson Text', serif;  
+    font-size: 1.3rem;
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-six p.line_2 {
+    color: gray;
+    font-family: 'Crimson Text', serif;  
+    font-size: 1.2rem;
+    font-style: italic; 
+}
+
+/* section six styling ends-----------------------------------------------------------------------------------*/
+
+
+/* section seven styling starts------------------------------------------------------------------------------- */
+
+.section-seven {
+
+    display:flex;
+    margin-bottom:10vh;
+}
+
+.section-seven div img {
+
+    display:block;
+    max-width:100%;
+}
+
+/* section seven styling ends------------------------------------------------------------------------------- */
+
+/* section eight styling starts------------------------------------------------------------------------------------*/
+
+/* styling the fashion news button */
+
+.fashionNews {
+
+    font-family: 'Montserrat', sans-serif;
+    border:2px solid #e4e4e4; 
+    max-width: 250px;;
+    margin:0 auto;
+    text-align: center;
+    padding:15px 40px;
+    text-transform: uppercase;
+    color:black;
+    margin-bottom: 60px;
+}
+
+.fashionNews a {
+
+    text-decoration: none;
+
+}
+
+.fashionNews a:visited {
+
+    color:black;
+
+}
+
+.fashionNews a:hover {
+
+    color:#eeb013;
+
+}
+
+/* styling the wrapper */
+
+.wrapper.eight {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* setting the width of each column */
+
+.column {
+
+    width:32%;
+}
+
+
+/* styling the title */
+
+.fashionNewsTitle {
+
+    
+    font-size:12px;
+    
+}
+
+/* styling the writer name */
+
+.byNatasha {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+
+}
+
+
+.writer {
+
+    color: #eeb013;
+}
+
+/* styling the icons */
+
+.iconRow {
+
+    display:flex;
+    align-items: flex-end;
+
+}
+
+.newsIconContainer {
+
+    border-top:1px solid  #e4e4e4;
+    border-bottom: 1px solid  #e4e4e4;
+    width:85%;
+}
+
+.date {
+
+    width:15%;
+    font-size: 13px;
+    font-family: 'Crimson Text', serif;
+   
+    margin:0;
+    padding:0 3px;
+    text-align: center;
+    background: #eeb013;
+    color:white;
+    font-style: italic;
+
+}
+
+.column i {
+
+    color:grey;
+    font-size:12px;
+    padding-right:7px;
+    padding-top:12px;
+    padding-bottom:12px;
+
+}
+
+
+/* styling the news  */
+.news {
+
+    font-family: 'Crimson Text', serif;
+    font-size:12px;
+    color:grey;
+}
+
+/* read more button styling */
+
+.readMore {
+
+    font-size:10px;
+    border:2px solid #e4e4e4; 
+    width:45%;
+    text-align: center;
+    padding:10px 20px;
+    text-transform: uppercase;
+    color:black;
+    text-decoration: none;
+    margin-top: 30px;
+  
+}
+
+.readMore a {
+
+    text-decoration: none;
+}
+
+.readMore a:visited {
+
+    color:black;
+}
+
+.readMore a:hover {
+
+    color:#eeb013;
+}
+
+
+/* section nine styling */
+
+/* testimonial button styling */
+
+.testimonial {
+
+    font-family: 'Montserrat', sans-serif;
+    border:2px solid #e4e4e4; 
+    width:25%;
+    text-align: center;
+    padding:15px 40px;
+    text-transform: uppercase;
+    color:black;
+    margin:60px auto;
+  
+}
+
+.testimonial a {
+
+    color:black;
+    text-decoration: none;
+}
+
+.testimonial a:visited {
+
+    color:black;
+}
+
+.testimonial a:hover {
+
+    color:#eeb013;
+}
+
+/* styling text after the testomonila button */
+
+.lineOne {
+
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    margin:0 auto 30px;
+    text-align: center;
+    width:85%;
+    line-height: 30px;
+}
+
+.lineTwo {
+
+    font-family: 'Crimson Text', serif;
+    margin:0 auto 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-style: normal;
+    
+
+}
+
+.lineThree {
+
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    margin:0 auto;
+    text-align: center;
+    color:grey;
+    font-size: 11px;
+
+
+}
+
+/* dot styling */
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+
+  .dot:active {
+
+    background-color:#eeb013;
+  }
+
+  .dot:nth-child(1) {
+
+    background-color:#eeb013;
+  }
+
+.dotContainer {
+
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+/* styling the our brands button */
+
+.ourBrands {
+
+    font-family: 'Montserrat', sans-serif;
+    border:2px solid #e4e4e4; 
+    width:25%;
+    text-align: center;
+    padding:15px 40px;
+    text-transform: uppercase;
+    color:black;
+    margin:0 auto;
+  
+}
+
+.ourBrands a {
+
+    color:black;
+    text-decoration: none;
+}
+
+.ourBrands a:visited {
+
+    color:black;
+}
+
+.ourBrands a:hover {
+
+    color:#eeb013;
+}
+
+
+/* partner logo styling */
+
+.partnerLogoContainer {
+
+    display:flex;
+    justify-content: space-between;
+    padding:60px 40px 70px;
+}
+
+.partnerLogo img {
+
+    display:block;
+    max-width:100%;
+}
+
+/* section nine styling ends---------------------------------------------------------------------*/
+/* section ten styling starts--------------------------------------------------------------------*/
+
+.section-ten {
+
+    background: url(assets/main-image-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+/* styling the wrapper */
+.wrapper.ten {
+
+    min-height:100%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* styling the flexcontainer */
+
+.flexcontainer-ten {
+
+    flex:0 1 50%;
+}
+
+
+/* styling the heading */
+.wrapper.ten h3 {
+
+    font-size:25px;
+    text-transform: uppercase;
+
+}
+
+.wrapper.ten p {
+
+    font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-size: 15px;
+
+
+}
+
+
+   /* styling the discover now button */
+  .discoverNow {
+
+      text-transform: uppercase;
+      font-weight:normal;
+      font-size:10px;
+      padding: 20px 40px;
+      background-color: black;
+      border:none;
+      margin-top:50px;
+      letter-spacing: 3px;
+      color:white;
+  }
+
+  .discoverNow a {
+
+    text-decoration: none;
+  }
+
+  .discoverNow a:visited {
+
+    color:white;
+  }
+
+  .discoverNow a:hover {
+
+    color:#eeb013;
+  }
+
+  /* section ten styling ends--------------------------------------------------------------*/
+
+
+/* footer styling starts------------------------------------------------------------------ */
+
+footer {
+
+    background: #000;
+    min-height:40vh;  
+} 
+
+.title {
+
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:10px;
+}
+
+footer p {
+
+    color: grey;
+    font-family: 'Crimson Text', serif;
+    font-size:13px;
+}
+
+/* styling the yellow border under the title each section */
+
+.title.witheBorder:after  {
+
+    content: "";
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #eeb013;
+    text-align: center;
+} 
+
+.footer h5 {
+
+    position: relative;
+    padding:10px 0;
+}
+
+
+
+/* part one styling*/
+
+.part-one h5 {
+
+    color:#eeb013;
+}
+
+.part-one {
+
+    flex:1 35%;
+    padding:20px;
+    border-right:0.5px solid grey;
+
+}
+
+.part-one p {
+
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+/* part two styling*/
+
+.part-two {
+
+    flex:1 17%;
+    padding:20px;
+    border-right:0.5px solid grey;
+
+    
+}
+
+.part-two ul {
+
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size:11px;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+
+footer li {
+
+    color: grey;
+    font-family: 'Crimson Text', serif;
+}
+
+footer li:hover {
+
+    color:#eeb013;
+}
+
+/* part three styling*/
+
+
+
+.part-three a {
+
+    color:grey;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+
+
+}
+
+footer span {
+
+    display:block;
+    font-size:12px;
+}
+
+.part-three p {
+
+    padding:5px 0;
+}
+
+.part-three {
+
+    flex:1 25%;
+    padding:20px;
+    border-right:0.5px solid gray;
+}
+
+
+/* part four */
+
+
+
+.instaImageContainer {
+
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+
+.instaImage {
+
+    
+    width:33%;
+    position:relative;
+    
+}
+
+.instaImage img {
+
+    display:block;
+    width:100%;
+    padding:4px;
+    
+   
+}
+
+.instaImage:hover img {
+
+    background-color:#eeb013;
+    opacity:0.3;
+
+}
+
+.search {
+
+    position:absolute;
+    top:45%;
+    left:45%;
+    opacity:0;
+    color:white;
+} 
+
+.instaImage:hover .search {
+
+    opacity:0.5;
+    
+}
+
+.part-four {
+
+    flex:1 23%;
+    padding:20px;
+}
+
+.wrapper.footer {
+
+    display:flex;
+    
+    padding-top:20px;
+}
+
+
+/* copyright styling */
+
+.copyright {
+
+    padding: 15px 0;
+}
+
+.wrapper.copyright {
+
+    display:flex;
+}
+
+.copyrightText {
+
+    flex:1 75%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerIconContainer {
+
+    display:flex;
+    flex:1 25%;
+    justify-content: space-between;
+   
+}
+
+/* icon style */
+
+.bird, .facebook, .pinterest, .youtube, .google, .linkedin {
+
+    color:grey;
+    font-size:10px;
+    padding-right:5px;
+}
+
+.footerIconContainer p:hover i {
+
+    color:#eeb013;
+}
+
+
+
+/* responsive design starts---------------------------------------------------------*/
+
+@media (max-width: 940px) {
+
+    /* sizing the wrapper */
+
+    .wrapper {
+
+        max-width: 100%; 
+    
+        
+    }
+
+    header nav {
+
+        margin-bottom: 15vh;
+    }
+
+    .woocommerce {
+
+        font-size:40px;
+       
+    }
+
+    .discover {
+    
+        margin-top:5vh;
+        padding: 10px 25px;
+        
+    }
+
+    /* section one */
+
+    div.image-two h3 {
+        
+        font-size: 1.5rem;
+        
+    }
+    
+    div.image-two h3.line_2 {
+        font-size: 4rem;
+    }
+
+    .newTrends, .accesories {
+        font-size: 1.8rem;
+        padding:10px 25px;
+        letter-spacing: 2px;
+    }
+
+    /* section two */
+
+    .newArrival {
+        
+        padding:10px 30px;
+        
+        margin-bottom: 40px;
+    }
+
+    /* section four */
+
+    .wrapper.four h3 {
+
+        font-size:22px;
+    }
+
+    .wrapper.four p {
+
+        font-size: 13px;
+
+    }
+
+    .wrapper.four p.price {
+
+        font-size: 18px;
+    }
+
+    .shoppingNow {
+
+        font-size:10px;
+        padding: 20px 25px;
+        letter-spacing: 2px;
+
+    }
+
+    /* section seven */
+
+    /* section nine */
+
+    .testimonial {
+        
+        padding:12px 30px;
+        margin:50px auto;
+    }
+    
+    .ourBrands {
+       
+        padding:15px 30px;
+    }
+
+    /* section ten */
+    
+    .wrapper.ten h3 {
+
+    font-size:20px;
+
+    }
+
+    .wrapper.ten p {
+
+      font-size: 15px;
+    }
+
+
+    /* styling the discover now button */
+
+    .discoverNow {
+
+    
+      padding: 15px 35px;
+      
+  }
+
+
+}
+
+/* Landscape phone to portrait tablet ----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+    /* sizing the wrapper ------------*/
+
+    .wrapper {
+
+        max-width: 100%; 
+
+       
+    
+    }
+
+    .wrapper.zero {
+
+        padding-top: 10vh;
+    }
+
+    /* header */
+
+    header nav {
+
+        display:flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    .logo {
+
+        margin-bottom: 3vh;
+        width:18vw;
+    }
+
+    header ul a {
+
+        padding:10px; 
+        color:white;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 10px;
+     
+    }
+
+    .woocommerce {
+
+        font-size:25px;
+        
+        font-weight: 800;
+        
+    }
+
+    header p.line_one {
+
+        font-size: 12px;
+    
+    }
+
+    .discover {
+    
+        margin-top:5vh;
+       
+        padding: 5px 20px;
+        
+    }
+
+    /* section one */
+
+    .newTrends, .accesories {
+        font-size: 1.3rem;
+        padding:5px 15px;
+        letter-spacing: 1px;
+        border:2px solid whitesmoke;
+    }
+
+    div.image-two h3 {
+        
+        font-size: 1.2rem;
+        
+    }
+    
+    div.image-two h3.line_2 {
+        font-size: 2.5rem;
+    }
+
+    /* section two */
+
+    .newArrival {
+        
+        padding:10px 16px;
+        
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        width:27%;
+        
+    }
+
+    .sectionTwoList {
+        font-size:1rem;
+        width:60%;
+    }
+
+    /* section three */
+
+    .image-sec-three {
+
+
+        width:48%;
+      
+    } 
+
+    /* section four */
+
+    .wrapper.four h3 {
+
+        font-size:2vw;
+    
+    }
+
+    /* section five */
+
+    .wrapper.five h3 {
+
+        font-size:2vw;
+    
+    }
+
+    .shoppingNow {
+
+        font-size:10px;
+        padding: 15px 20px;
+        letter-spacing: 0;
+    
+    }
+
+    /* section six */
+
+    .part {
+
+        max-width:100%;
+    }
+
+    .wrapper.six {
+
+        flex-direction: column;
+    }
+
+    .part-1, .part-2 {
+
+        margin:0 0 25px;
+    }
+
+    /* section seven -------------------------------*/
+
+    .wrapper.eight {
+
+        flex-direction: column;
+    }
+    
+    .column {
+    
+        width:100%;
+
+    }
+
+
+    .column img {
+
+        width:100%;
+    }
+
+    .column p {
+
+        text-align: center;
+    }
+
+    .readMore {
+
+        margin:20px auto;
+    }
+
+
+    /* section nine */
+
+    .testimonial {
+        
+        padding:12px 15px;
+        margin:40px auto;
+        font-size: 12px;
+        
+      
+    }
+    
+    .ourBrands {
+       
+        padding:12px 15px;
+        font-size: 12px;
+    }
+
+    .partnerLogoContainer {
+        
+        padding:40px 30px 40px;
+    }
+
+    .partnerLogoImage {
+
+        padding:0 10px;
+    }
+
+    /* section ten */
+
+    .wrapper.ten h3 {
+
+        font-size:13px; 
+    }
+
+    .wrapper.ten p {
+
+        font-size: 10px;
+    }
+
+    .discoverNow {
+
+      font-size:10px;
+      padding: 10px 20px;
+      margin-top:20px;
+      letter-spacing: 1px;
+    
+    }
+
+
+    /* footer */
+
+    .part-one {
+
+        flex: 1 60%;
+    }
+
+    .part-two {
+
+        flex: 1 40%;
+    }
+
+    .part-three {
+
+        flex: 1 60%;
+    }
+
+    .part-four {
+
+        flex: 1 40%;
+    }
+
+    .wrapper.footer {
+
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Landscape phones and down ---------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+    .wrapper {
+
+        max-width: 100%; 
+
+        
+        
+    }
+
+    /* header */
+
+    .logo {
+
+        width:20vw;
+    }
+
+    .woocommerce {
+
+        
+        font-weight: 700;
+        
+    }
+
+    /* section one */
+
+    .newTrends, .accesories {
+        font-size: 1rem;
+        padding:5px 10px;
+        letter-spacing: 1px;
+        border:2px solid whitesmoke;
+    }
+
+    div.image-two h3 {
+        
+        font-size: 1.1rem;
+        
+    }
+    
+    div.image-two h3.line_2 {
+        font-size: 2rem;
+    }
+
+    /* section two */
+
+
+    .newArrival {
+        
+        padding:10px 12px;
+        
+        margin-bottom: 20px;
+        font-size: 1rem;
+        width:27%;
+
+        
+    }
+
+    /* section four */
+
+    .wrapper.four {
+
+        justify-content: flex-start;
+    }
+
+    .wrapper.four h3 {
+
+        font-size:4vmin;
+    
+    }
+
+    .wrapper.four p {
+
+        font-size: 10px;
+    }
+
+    .wrapper.four p.price {
+
+        font-size: 10px;
+    }
+
+    /* section five */
+
+    .wrapper.five h3 {
+
+        font-size:4vmin;
+    
+    }
+
+    
+
+    .wrapper.five p {
+
+        font-size: 10px;
+    }
+
+
+    .shoppingNow {
+
+    
+        padding: 8px 10px;
+        font-size: 8px;
+        
+    
+    }
+    /* section six ---------------------------------*/
+
+     .part {
+
+        max-width:100%;
+    }
+
+    .wrapper.six {
+
+        flex-direction: column;
+    }
+
+    .part-1, .part-2 {
+
+        margin:0 0 25px;
+    }
+
+    /* section seven -------------------------------*/
+
+    .wrapper.eight {
+
+        flex-direction: column;
+    }
+    
+    .column {
+    
+        width:100%;
+
+        
+    }
+
+    .column img {
+
+        width:100%;
+    }
+
+    .column p {
+
+        text-align: center;
+    }
+
+    .readMore {
+
+        margin:20px auto;
+    }
+
+    /* section nine */
+
+    .testimonial {
+        
+        padding:12px 15px;
+        margin:30px auto;
+        font-size: 10px;
+        
+      
+    }
+    
+    .ourBrands {
+       
+        padding:12px 15px;
+        font-size: 10px;
+    }
+
+
+    /* footer */
+
+    .wrapper.footer {
+
+        display:flex;
+        flex-direction: column;
+        
+        /* padding-top:20px; */
+    }
+
+}
+
+
+
+
+
